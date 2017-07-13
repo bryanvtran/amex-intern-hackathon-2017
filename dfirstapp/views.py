@@ -21,3 +21,6 @@ def match(request):
 
 def contact(request):
     return render(request, 'message.html')
+
+def search_matches(request):
+    return render(request, 'search_matches.html')

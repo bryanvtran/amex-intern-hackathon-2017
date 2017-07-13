@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^teamprof/$', views.teamprof, name='teamprof'),
     url(r'^match/$', views.match, name='match'),
     url(r'^contact/$', views.contact, name='contact'),
+    url(r'^search-matches/$', views.search_matches, name='search_matches'),
 ]

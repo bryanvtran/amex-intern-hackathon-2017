@@ -262,3 +262,8 @@ width: 100%;
   color: #fff;
   cursor:pointer;
 }
+
+.back-btn {
+  display: block;
+  margin: 14px;
+}
