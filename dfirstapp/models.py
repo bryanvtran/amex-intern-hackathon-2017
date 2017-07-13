@@ -10,8 +10,8 @@ class StudentProfile(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()
     bio = models.TextField()
-    picture = models.ImageField(upload_to='uploads/pictures/')
-    resume = models.FileField(upload_to='uploads/resumes/')
+    picture = models.ImageField(upload_to='uploads/pictures/', null=True, blank=True)
+    resume = models.FileField(upload_to='uploads/resumes/', null=True, blank=True)
 
 class StudentInterest(models.Model):
     student = models.ForeignKey(StudentProfile, on_delete=models.CASCADE)
@@ -21,23 +21,24 @@ class StudentSkill(models.Model):
     student = models.ForeignKey(StudentProfile, on_delete=models.CASCADE)
     skill = models.CharField(max_length=50)
 
-class StudentLinks(models.Model):
+class StudentLink(models.Model):
     student = models.ForeignKey(StudentProfile, on_delete=models.CASCADE)
     url = models.URLField()
 
-# """
-# TeamProfile
-# """
-# class TeamProfile(models.Model):
-#     name = models.StringField(max_length=30)
-#     picture
-#     description
-#     required_skills
-#
-# """
-# TeamMembers
-# """
-# class TeamMembers(models.Model):
-#     name
-#     email
-#     bio
+"""
+TeamProfile
+"""
+class TeamProfile(models.Model):
+    name = models.CharField(max_length=50)
+    picture = models.ImageField(upload_to='uploads/pictures/', null=True, blank=True)
+    description = models.TextField()
+
+class TeamSkill(models.Model):
+    team = models.ForeignKey(TeamProfile, on_delete=models.CASCADE)
+    skill = models.CharField(max_length=50)
+
+class TeamMember(models.Model):
+    team = models.ForeignKey(TeamProfile, on_delete=models.CASCADE)
+    name = models.CharField(max_length=50)
+    email = models.EmailField()
+    bio = models.TextField()
