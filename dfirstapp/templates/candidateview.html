@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="../../css/view.css">
-</head>
-<body>
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Student Profile{% endblock %}
+
+{% block body %}
 <div class="profile top">
     <img src="http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/iStock_000006166025_Small.jpg" />
     <h2>Desperate One</h2>
@@ -31,5 +30,4 @@
     <h3>Links</h3>
 </div>
 
-</body>
-</html>
+{% endblock %}

@@ -11,13 +11,13 @@ def signup(request):
     })
 
 def studentprof(request):
-    return render(request, 'home.html')
+    return render(request, 'candidateview.html')
 
 def teamprof(request):
-    return render(request, 'home.html')
+    return render(request, 'teamview.html')
 
 def match(request):
-    return render(request, 'home.html')
+    return render(request, 'pop_up.html')
 
 def contact(request):
-    return render(request, 'home.html')
+    return render(request, 'message.html')

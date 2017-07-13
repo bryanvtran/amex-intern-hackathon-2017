@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../static/css/message.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-    </head>
-<body>
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Message{% endblock %}
+
+{% block body %}
 
 <div class="main_section">
    <div class="container">
@@ -133,5 +130,4 @@
       </div>
    </div>
 </div>
-</body>
-</html>
+{% endblock %}
