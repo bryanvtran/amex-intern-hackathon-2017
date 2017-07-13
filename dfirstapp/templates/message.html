@@ -2,13 +2,17 @@
 {% load static %}
 {% block title %}Message{% endblock %}
 
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/message.css' %}">
+{% endblock %}
+
 {% block body %}
 
 <div class="main_section">
    <div class="container">
         <div class="chat_container">
             <div class="col-lg-3 chat_sidebar">
-    	    <div class="row">
+    	    <div class="row" style="margin: 0;">
             <div id="custom-search-input">
                <div class="input-group col-md-12">
                   <input type="text" class="  search-query form-control" placeholder="Conversation" />
@@ -83,9 +87,9 @@
             </div>
         </div>
         </div><!--chat_sidebar-->
-		 
+
 		<div class="col-lg-9 message_section">
-		<div class="row">
+		<div class="row" style="margin: 0;">
             <div class="new_message_head">
                 <div class="pull-left">
                     <button class="btn btn-primary btn-xs"><i class="fa fa-plus-square-o" aria-hidden="true"></i> New Message</button>
@@ -131,7 +135,7 @@
                         <div class="chat-body1 clearfix">
                             <p class="pull-left">Oink Oink! OINK oink Oink OinK OiNK OiNk!!!</p>
                         </div>
-                    </li>	 
+                    </li>
                 </ul>
             </div><!--chat_area-->
 
