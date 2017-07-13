@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def signup(request):
-    return
+    return render(request, 'home.html')
 
 def studentprof(request):
     return render(request, 'home.html')
