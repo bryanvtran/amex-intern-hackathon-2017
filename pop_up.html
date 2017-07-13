@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pop_up.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>It's a Match!</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Example</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title match_title">
+            <p class="text-center">It's a Match!</p>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">You and Team may have a work relationship!</p>
+          <div class="row">
+              <div class="col-xs-6 col-md-6"><img src="http://static.boredpanda.com/blog/wp-content/uploads/2016/08/cute-kittens-30-57b30ad41bc90__605.jpg" class="img-circle left_img" alt="kitten" width="236" height="236"/></div>
+              <div class="col-xs-6 col-md-6"><img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="img-circle" alt="puppy" width="236" height="236"/></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="col-md-4 col-md-offset-3"> 
+              <button id="singlebutton" name="singlebutton" class="btn btn-primary">Message!</button>
+          </div>
+          <div class="col-md-4 col-md-offset-3"> 
+              <button id="secondbutton" name="secondbutton" class="btn btn-primary options_btn">Keep Looking!</button>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
