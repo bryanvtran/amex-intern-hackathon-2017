@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Team Profile{% endblock %}
+{% block title %}Team Profile{% endblock
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/view.css' %}">
+{% endblock }
 
 {% block body %}
-
-
 <div class="profile top">
     <div class="choose">
         <button class="button-one">Yes</button>
