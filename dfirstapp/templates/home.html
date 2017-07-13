@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-HELLO, WORLD. I'M AMY!
-</body>
-</html>
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+Hello world! This is the home page.
+
+{{ form.as_p }}
+{% endblock %}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: BentonSans;
+    src: url("../fonts/BentonSansBook.otf") format("opentype");
+}
+
+.left_img {
+	margin-left: 20px;
+}
+
+.options_btn {
+	margin: 10px;
+	margin-left: 55px;
+}
+
+.match_title {
+	font-size: 30pt;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BentonSans', sans-serif;
+}
+p, div {
+    font-family: 'BentonSans', sans-serif;
+}
