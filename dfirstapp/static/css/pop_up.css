@@ -21,3 +21,16 @@ h1, h2, h3, h4, h5, h6 {
 p, div {
     font-family: 'BentonSans', sans-serif;
 }
+
+footer {
+  margin-top: 32px;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.shift {
+  margin-left: 6px;
+  height: 16px;
+  width: auto;
+  vertical-align: middle;
+}

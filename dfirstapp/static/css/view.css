@@ -94,9 +94,18 @@ collapsing li{
     border-radius: 50%;
 }
 
+.team-members h3 {
+  margin-bottom: 32px;
+}
+
 .member-profile {
     float: left;
     width: 25%;
+    margin-bottom: 32px;
+}
+
+.member-profile img {
+  margin-bottom: 16px;
 }
 
 /* login page*/
