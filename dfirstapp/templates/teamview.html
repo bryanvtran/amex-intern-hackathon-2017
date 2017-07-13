@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Team Profile{% endblock
+{% block title %}Team Profile{% endblock %}
 
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/view.css' %}">
@@ -9,7 +9,7 @@
 {% block body %}
 <div class="profile top">
     <div class="choose">
-        <button class="button-one">Yes</button>
+        <button class="button-one" data-toggle="modal" data-target="#myModal">Yes</button>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFzM1xEaWM3iV1AFS2M9RK4ESlA_XAN6S_QwmbDGZHXpbM4ZQBdQ" />
         <button class="button-two">No</button>
     </div>
