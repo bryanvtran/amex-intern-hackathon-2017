@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/search_matches.css" />
+  </head>
+<body>
+  <div id="header">
+    <h1 > Find matches for.......</h1>
+      <input type="text" id="search_bar" placeholder="Type a name"></input>
+      <br>
+      <input id="search_button" type="button" value="search" onclick="addInfo()">
+    </div>
+
+
+
+  <div id="list_matches">
+  </div>
+
+
+
+
+  <ul id="list">
+    <!-- <li>
+      <img src="images/dog2.jpeg" >
+      <h3>Global Risk Mangagement</h3>
+      <h5>Fighting Crime.</h5>
+    </li>
+
+    <li>
+      <img src="images/dog3.jpeg" >
+      <h3>Global Networking Technologies</h3>
+      <h5>Linking us together</h5>
+    </li>
+
+    <li>
+      <img src="images/dog1.jpg" >
+      <h3>Client Onboarding</h3>
+      <h5>How we actually make money</h5>
+    </li> -->
+  </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+
+    function addInfo() {
+      deleteImages()
+      addList();
+    }
+
+    function deleteImages() {
+      var root = document.getElementById("list");
+      while( root.firstChild ){
+        root.removeChild( root.firstChild );
+      }
+    }
+
+    function addName() {
+      var nameElement = document.createElement("h2");
+      var text = document.createTextNode(document.getElementById("search_bar").value);
+      nameElement.appendChild(text);
+      var matches_text = document.getElementById('matches_text');
+      matches_text.appendChild(nameElement);
+
+    }
+    function addList() {
+      console.log("here");
+      var list = document.getElementById("list");
+      for(var i = 0; i < 3; i++) {
+        element = document.createElement("li");
+        img = document.createElement("img")
+        img.classList.add("img-circle");
+        h3 = document.createElement("h4");
+        h5 = document.createElement("h6");
+        if(i === 0) {
+          img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQWHFJy4muwRweATt5RQzlcQquKcvtY_uheR2VzOvEh7aRU8UP";
+          h3.appendChild(document.createTextNode("Global Risk Mangagement"));
+          h5.appendChild(document.createTextNode("Fighting Crime"));
+        }
+        else if(i === 1) {
+          img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFzM1xEaWM3iV1AFS2M9RK4ESlA_XAN6S_QwmbDGZHXpbM4ZQBdQ";
+          h3.appendChild(document.createTextNode("The Best Team"));
+          h5.appendChild(document.createTextNode("We do cool projects and stuff"));
+        }
+        else {
+          img.src = "https://animalso.com/wp-content/uploads/2017/01/golden-retriever-puppies_2.jpg";
+          h3.appendChild(document.createTextNode("Client Onboarding"));
+          h5.appendChild(document.createTextNode("How we actually make money"));
+        }
+        element.appendChild(img);
+        element.appendChild(h3);
+        element.appendChild(h5);
+        list.appendChild(element);
+
+      }
+    }
+  </script>
+</body>
+</html>

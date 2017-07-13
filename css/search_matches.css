@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: BentonSans;
+    src: url("../../css/fonts/BentonSansBook.otf") format("opentype");
+}
+
+
+
+h3 {
+  color: rgba(0, 38, 99, 1);
+}
+
+h5 {
+  color: rgba()
+}
+
+body {
+
+}
+
+h1 {
+  font-family: "BentonSans", sans-serif;
+}
+
+
+#header {
+  margin: 0 auto;
+  width: 500px;
+
+}
+
+#search_bar {
+  width: 300px;
+}
+
+#search_button {
+  margin-top: 10px;
+}
+
+#headerBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+
+
+ul {
+  list-style-type: none;
+  width: 800px;
+}
+
+h3 {
+  font-family: "BentonSans", sans-serif;
+}
+
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+  width: 180px;
+  height: 180px;
+  margin-top: 25px;
+}
+
+li h3 {
+  font-family: : 200 12px/1.5 "BentonSans", sans-serif;
+    padding-top: 50px;
+}
+
+li h5 {
+  font-family: : 200 12px/1.5 "BentonSans", sans-serif;
+  padding-top: 50px;
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
